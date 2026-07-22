@@ -23,7 +23,7 @@
     <string name="addAdminsDescription">Adja meg a felhasználó fiókazonosítóját, akit adminisztrátorrá kíván kinevezni.\n\nEgyszerre több felhasználó hozzáadásához adja meg az egyes fiókazonosítókat vesszővel elválasztva. Egyszerre legfeljebb 20 fiókazonosító adható meg.</string>
     <string name="admin">Adminisztrátor</string>
     <string name="adminCannotBeDemoted">Az adminisztrátorokat nem lehet lefokozni vagy eltávolítani a csoportból.</string>
-    <string name="adminCannotBeRemoved">Adminokat nem lehet eltávolítani.</string>
+    <string name="adminCannotBeRemoved">Az adminisztrátorok nem távolíthatók el.</string>
     <string name="adminMorePromotedToAdmin"><b>{name}</b> és <b>{count} másik személy</b> adminisztrátorrá lettek előléptetve.</string>
     <string name="adminPromote">Adminisztrátorok előléptetése</string>
     <string name="adminPromoteDescription">Biztos, hogy elő akarod léptetni <b>{name}</b>-t adminisztrátorrá? Az adminisztrátorok nem távolíthatók el.</string>
@@ -111,7 +111,7 @@
     <string name="attachmentsCollecting">Mellékletek gyűjtése...</string>
     <string name="attachmentsDownload">Melléklet letöltése</string>
     <string name="attachmentsDuration">Időtartam:</string>
-    <string name="attachmentsErrorLoad">Hiba a fájl csatolása közben</string>
+    <string name="attachmentsErrorLoad">Hiba a fájl mellékelésekor</string>
     <string name="attachmentsErrorMediaSelection">Melléklet kiválasztása sikertelen</string>
     <string name="attachmentsErrorNoApp">Nem található alkalmazás a médiafájl kiválasztásához.</string>
     <string name="attachmentsErrorNotSupported">Ez a fájltípus nem támogatott.</string>
@@ -164,7 +164,7 @@
     <string name="banUser">Felhasználó kitiltása</string>
     <string name="banUserBanned">Felhasználó kitiltva</string>
     <string name="banUserDescription">Adja meg annak a felhasználónak a fiókazonosítóját, amelyiket ki akarja tiltani</string>
-    <string name="blindedId">Elrejtett azonosító</string>
+    <string name="blindedId">Rejtett azonosító</string>
     <string name="block">Letiltás</string>
     <string name="blockBlockedDescription">Üzenet küldéséhez oldd fel a kontakt letiltását.</string>
     <string name="blockBlockedNone">Nincsenek blokkolt kontaktok</string>
@@ -178,7 +178,7 @@
     <string name="blockedContactsManageDescription">Letiltott partnerek megtekintése és kezelése.</string>
     <string name="browserNotFound">Nem található böngésző az URL megnyitásához, próbáld meg inkább kimásolni az URL-t</string>
     <string name="call">Hívás</string>
-    <string name="callsCalledYou">{name} hívott téged</string>
+    <string name="callsCalledYou">{name} hívta Önt</string>
     <string name="callsCannotStart">Nem tudsz új hívást kezdeni. Először fejezd be a jelenlegi hívást.</string>
     <string name="callsConnecting">Csatlakozás...</string>
     <string name="callsEnd">Hívás befejezése</string>
@@ -214,7 +214,7 @@
     <string name="cameraGrantAccess">Kamera-hozzáférés megadása</string>
     <string name="cameraGrantAccessDenied">{app_name} alkalmazásnak kamera-hozzáférésre van szüksége fotók és videók készítéséhez, de ez nem lett megadva. Kérlek, lépj tovább az alkalmazás beállításokhoz, válaszd az \"Engedélyek\" lehetőséget, majd engedélyezd a \"Kamera\" hozzáférést.</string>
     <string name="cameraGrantAccessDescription">{app_name} alkalmazásnak kamera-hozzáférésre van szüksége fotók és videók készítéséhez, illetve QR-kódok beolvasásához.</string>
-    <string name="cameraGrantAccessQr">{app_name} alkalmazásnak kamera-hozzáférésre van szüksége a QR-kódok beolvasásához</string>
+    <string name="cameraGrantAccessQr">A(z) {app_name} alkalmazásnak hozzáférésre van szüksége a kamerához a QR-kódok beolvasásához</string>
     <string name="cancel">Mégsem</string>
     <string name="cancelAccess">{pro} megszakítása</string>
     <string name="change">Módosítás</string>
@@ -432,7 +432,7 @@
     <string name="disappearingMessagesFollowSetting">Beállítás követése</string>
     <string name="disappearingMessagesFollowSettingOff">Az elküldött üzenetek többé nem tűnnek el. Biztosan szeretnéd <b>kikapcsolni</b> az eltűnő üzeneteket?</string>
     <string name="disappearingMessagesFollowSettingOn">Be szeretnéd állítani, hogy az üzeneteid <b>{time}</b> után eltűnjenek, miután el lettek <b>{disappearing_messages_type}</b>?</string>
-    <string name="disappearingMessagesLegacy">{name} egy elavult klienst használ. Az eltűnő üzenetek valószínűleg nem fognak működni a várt módon.</string>
+    <string name="disappearingMessagesLegacy">{name} egy elavult klienst használ. Az eltűnő üzenetek nem biztos, hogy a várt módon működnek.</string>
     <string name="disappearingMessagesOnlyAdmins">Ezt a beállítást csak adminisztrátorok változtathatják meg.</string>
     <string name="disappearingMessagesSent">Küldött</string>
     <string name="disappearingMessagesSet"><b>{name}</b> beállította, hogy az üzenetek eltűnjenek {time} után, miután el lettek {disappearing_messages_type}.</string>
@@ -440,7 +440,7 @@
     <string name="disappearingMessagesTimer">Időzítő</string>
     <string name="disappearingMessagesTurnedOff"><b>{name}</b> kikapcsolta az eltűnő üzeneteket. Az általa küldött üzenetek többé nem tűnnek el.</string>
     <string name="disappearingMessagesTurnedOffGroup"><b>{name}</b> <b>kikapcsolta</b> az eltűnő üzeneteket.</string>
-    <string name="disappearingMessagesTurnedOffYou"><b>Te</b> <b>kikapcsoltad</b> az eltűnő üzeneteket. Az általad küldött üzenetek többé nem fognak eltűnni.</string>
+    <string name="disappearingMessagesTurnedOffYou"><b>Ön</b> <b>kikapcsolta</b> az eltűnő üzeneteket. Az Ön által küldött üzenetek többé nem fognak eltűnni.</string>
     <string name="disappearingMessagesTurnedOffYouGroup"><b>Te</b> <b>kikapcsoltad</b> az eltűnő üzeneteket.</string>
     <string name="disappearingMessagesTypeRead">olvasva</string>
     <string name="disappearingMessagesTypeSent">küldve</string>
@@ -510,7 +510,7 @@
     <string name="errorGeneric">Valami hiba történt. Próbálja meg később újra.</string>
     <string name="errorLoadingProAccess">Hiba történt a(z) {pro} hozzáférés betöltésekor</string>
     <string name="errorNoLookupOns">A(z) {app_name} nem tudta megkeresni ezt az ONS-t. Kérjük, ellenőrizze hálózati kapcsolatát, és próbálja meg újra.</string>
-    <string name="errorUnknown">Ismeretlen hiba történt.</string>
+    <string name="errorUnknown">Egy ismeretlen hiba történt.</string>
     <string name="errorUnregisteredOns">Ez az ONS nincs regisztrálva. Kérjük, ellenőrizze, hogy helyes-e, és próbálja újra.</string>
     <string name="failedResendInvite">Nem sikerült újra elküldeni a meghívót <b>{name}</b> részére a <b>{group_name}</b> csoportban.</string>
     <string name="failedResendInviteMultiple">Nem sikerült újra elküldeni a meghívót <b>{name}</b> és <b>{count} másik személy</b> részére a <b>{group_name}</b> csoportban.</string>
@@ -605,7 +605,7 @@
     <string name="groupOnlyAdmin">Te vagy az egyetlen adminisztrátor a <b>{group_name}</b> csoportban.\n\nA csoporttagok és beállítások nem változtathatók adminisztrátor nélkül.</string>
     <string name="groupOnlyAdminLeave">Te vagy az egyetlen adminisztrátor a <b>{group_name}</b> csoportban.\n\nA csoporttagok és a beállítások nem módosíthatók adminisztrátor nélkül. Ha törlés nélkül szeretnéd elhagyni a csoportot, kérlek előbb adj hozzá egy új adminisztrátort.</string>
     <string name="groupPendingRemoval">Eltávolításra vár</string>
-    <string name="groupPromotedYou"><b>Te</b> adminisztrátorrá lettél előléptetve.</string>
+    <string name="groupPromotedYou"><b>Önt</b> előléptették adminisztrátorrá.</string>
     <string name="groupPromotedYouMultiple"><b>Te</b> és <b>{count} másik személy</b> adminisztrátorrá lettetek előléptetve.</string>
     <string name="groupPromotedYouTwo"><b>Ön</b> és <b>{other_name}</b> elő lett léptetve adminisztrátorrá.</string>
     <string name="groupRemoveDescription">El szeretnéd távolítani <b>{name}</b>-t a <b>{group_name}</b> csoportból?</string>
@@ -710,11 +710,11 @@
     <string name="lockAppDescription">Ujjlenyomat, PIN-kód, minta vagy jelszó szükséges {app_name} feloldásához.</string>
     <string name="lockAppDescriptionIos">Face ID, Touch ID vagy jelszó szükséges {app_name} feloldásához.</string>
     <string name="lockAppEnablePasscode">Be kell állítanod egy jelszót az iOS Beállításokban, hogy használni tudd az alkalmazás zárolási funkcióját.</string>
-    <string name="lockAppLocked">{app_name} zárolva van</string>
+    <string name="lockAppLocked">A(z) {app_name} zárolva van</string>
     <string name="lockAppQuickResponse">A gyors válasz nem érhető el, ha {app_name} zárolva van!</string>
     <string name="lockAppStatus">Zár státusza</string>
     <string name="lockAppUnlock">Koppintson a feloldáshoz</string>
-    <string name="lockAppUnlocked">{app_name} feloldva</string>
+    <string name="lockAppUnlocked">A(z) {app_name} fel van oldva</string>
     <string name="logs">Naplók</string>
     <string name="manageAdmins">Adminok kezelése</string>
     <string name="manageMembers">Tagok kezelése</string>
@@ -840,7 +840,7 @@
     <string name="notificationDisplay">Értesítés megjelenítése</string>
     <string name="notificationSenderNameAndPreview">Jelenjen meg a feladó neve és az üzenet tartalmának előnézete.</string>
     <string name="notificationSenderNameOnly">Csak a feladó neve jelenjen meg, az üzenet tartalma nélkül.</string>
-    <string name="notificationsAllMessages">Minden üzenet</string>
+    <string name="notificationsAllMessages">Összes üzenet</string>
     <string name="notificationsContent">Értesítések tartalma</string>
     <string name="notificationsContentDescription">Az értesítésekben megjelenő információ.</string>
     <string name="notificationsContentShowNameAndContent">Feladó neve és az üzenet</string>
@@ -952,7 +952,7 @@
     <string name="paymentProError">A fizetésed sikeresen megtörtént, de hiba történt a(z) {pro} státuszod {action_type} közben.\n\nKérjük, ellenőrizd a hálózati kapcsolatodat, és próbáld újra.</string>
     <string name="permissionChange">Engedélyváltozás</string>
     <string name="permissionMusicAudioDenied">{app_name} alkalmazásnak zene és hang-hozzáférésre van szüksége a fájlok és zenék küldéséhez, de ez nem lett megadva. Kérlek, lépj tovább az alkalmazás beállításokhoz, válaszd az \"Engedélyek\" lehetőséget, majd engedélyezd a \"Zene és hang\" hozzáférést.</string>
-    <string name="permissionsAppleMusic">{app_name}-nak szüksége van az Apple Music használatára a média mellékletek lejátszásához.</string>
+    <string name="permissionsAppleMusic">A(z) {app_name} alkalmazásnak szüksége van az Apple Music használatára a médiafájlok lejátszásához.</string>
     <string name="permissionsAutoUpdate">Automatikus frissítés</string>
     <string name="permissionsAutoUpdateDescription">Indításkor automatikusan ellenőrzi a frissítéseket.</string>
     <string name="permissionsCameraAccessRequiredCallsIos">A videohívások indításához kamerához való hozzáférés szükséges. Kapcsolja be a „Kamera” engedélyt a Beállításokban a folytatáshoz.</string>
@@ -1006,14 +1006,12 @@
     <string name="proAccessNotFoundDescription">A(z) {app_name} észlelte, hogy fiókja nem rendelkezik {pro} hozzáféréssel. Ha úgy gondolja, hogy ez tévedés, kérjük, forduljon a(z) {app_name} ügyfélszolgálatához segítségért.</string>
     <string name="proAccessRecover">{pro} hozzáférés visszaállítása</string>
     <string name="proAccessRenew">{pro} hozzáférés megújítása</string>
-    <string name="proAccessRenewDesktop">A(z) {pro} hozzáférés jelenleg kizárólag a(z) {platform_store} vagy a(z) {platform_store_other} áruházon keresztül vásárolható meg és újítható meg. Mivel Ön a(z) {app_name} Asztali alkalmazást használja, itt nem tudja frissíteni.\n\nA(z) {app_name} fejlesztői elkötelezetten dolgoznak olyan alternatív fizetési lehetőségeken, amelyek lehetővé teszik a(z) {pro} hozzáférés megvásárlását a(z) {platform_store} és a(z) {platform_store_other} áruházakon kívül is. <b>{pro} ütemterv</b> {icon}</string>
     <string name="proAccessRenewPlatformStoreWebsite">Újítsd meg a {pro} hozzáférésed a <b><font color="0">{platform_store} weboldalán</font></b>, azzal a {platform_account} fiókkal, amellyel eredetileg regisztráltál a {pro}-ra.</string>
     <string name="proAccessRenewPlatformWebsite">Újítsa meg a <b><font color="0">{platform} weboldalon</font></b>, azzal a {platform_account} fiókkal, amellyel a {pro}-ra regisztrált.</string>
     <string name="proAccessRenewStart">Újítsa meg {pro} hozzáférését, hogy ismét használhassa a nagy teljesítményű {app_pro} béta funkciókat.</string>
     <string name="proAccessRestored">{pro} hozzáférés visszaállítva</string>
     <string name="proAccessRestoredDescription">A(z) {app_name} felismerte és visszaállította a(z) {pro} hozzáférést a fiókodhoz. A(z) {pro} státuszod vissza lett állítva!</string>
     <string name="proAccessSignUp">Mivel eredetileg a <b>{platform_store}</b> áruházon keresztül iratkoztál fel a {app_pro}-ra, a {platform_account} fiókodat kell használnod a {pro} hozzáférésed frissítéséhez.</string>
-    <string name="proAccessUpgradeDesktop">Jelenleg a {pro} hozzáférés csak a(z) {platform_store} vagy a(z) {platform_store_other} áruházon keresztül vásárolható meg. Mivel a(z) {app_name} asztali verzióját használod, itt nem tudsz {pro} verzióra frissíteni.\n\nA {app_name} fejlesztői keményen dolgoznak alternatív fizetési lehetőségeken, hogy a felhasználók a(z) {platform_store} és {platform_store_other} áruházakon kívül is megvásárolhassák a {pro} hozzáférést. <b>{pro} ütemterv</b> {icon}</string>
     <string name="proActivated">aktiválva</string>
     <string name="proActivatingActivation">aktiválás</string>
     <string name="proAllSet">Minden készen áll!</string>
@@ -1110,14 +1108,12 @@
     <string name="proRefundingDescription">A(z) {app_pro} visszatérítési kérelmeket kizárólag a(z) {platform} kezeli a(z) {platform_store} szolgáltatáson keresztül.\n\nA(z) {platform} visszatérítési irányelvei miatt a(z) {app_name} fejlesztőinek nincs lehetőségük befolyásolni a visszatérítési kérelmek kimenetelét. Ez magában foglalja a kérelem elfogadását vagy elutasítását, valamint a teljes vagy részleges visszatérítés jóváhagyását.</string>
     <string name="proRenewAnimatedDisplayPicture">Szeretné ismét használni az animált profilképeket?\nMeglévő {pro} hozzáférésének megújításával feloldhatja a kihagyott funkciókat.</string>
     <string name="proRenewBeta">{pro} Beta megújítása</string>
-    <string name="proRenewDesktopLinked">A {pro} hozzáférésed megújíthatod a {app_pro} beállításainál egy olyan kapcsolt eszközön, amelyre a {app_name} az {platform_store} vagy a {platform_store_other} áruházon keresztül van telepítve.</string>
     <string name="proRenewLongerMessages">Szeretnél ismét hosszabb üzeneteket küldeni?\nÚjítsd meg {pro} hozzáférésed, és férj hozzá a hiányzó funkciókhoz.</string>
     <string name="proRenewMaxPotential">Szeretné ismét a maximumon kihasználni a(z) {app_name} lehetőségeit?\nMeglévő {pro} hozzáférésének megújításával feloldhatja a kihagyott funkciókat.</string>
     <string name="proRenewPinFiveConversations">Szeretne ismét több mint {limit} beszélgetést rögzíteni?\nMeglévő {pro} hozzáférésének megújításával feloldhatja a kihagyott funkciókat.</string>
     <string name="proRenewPinMoreConversations">Szeretne ismét több beszélgetést rögzíteni?\nMeglévő {pro} hozzáférésének megújításával feloldhatja a kihagyott funkciókat.</string>
     <string name="proRenewTosPrivacy">A megújítással elfogadja a(z) {app_pro} <b>Felhasználási feltételeit</b> {icon} és az <b>Adatvédelmi szabályzatát</b> {icon}</string>
     <string name="proRenewingAction">megújítás</string>
-    <string name="proRenewingNoAccessBilling">Jelenleg a {pro} hozzáférés csak a(z) {platform_store} vagy a(z) {platform_store_other} áruházon keresztül vásárolható meg és újítható meg. Mivel a(z) {app_name} alkalmazást a(z) {build_variant} használatával telepítetted, itt nem tudod megújítani.\n\nA {app_name} fejlesztői keményen dolgoznak alternatív fizetési lehetőségeken, hogy a felhasználók a(z) {platform_store} és {platform_store_other} áruházakon kívül is megvásárolhassák a {pro} hozzáférést.<b> {pro} ütemterv</b> {icon}</string>
     <string name="proRequestedRefund">Visszatérítés kérve</string>
     <string name="proSendMore">Küldjön többet ezzel:</string>
     <string name="proSettings">{pro} beállítások</string>
@@ -1144,8 +1140,6 @@
     <string name="proUpdateAccessExpireDescription">A(z) {pro} hozzáférése lejár ekkor: <b>{date}</b>.\n\nA frissítéssel a(z) {pro} hozzáférése automatikusan meg fog újulni ekkor: <b>{date}</b>, további <b>{selected_plan_length}</b> időtartamra a(z) {pro} használatához.</string>
     <string name="proUpdatingAction">frissítés</string>
     <string name="proUpgradeAccess">Frissítsd a(z) {app_pro} Beta verzióra, hogy exkluzív előnyökhöz és funkciókhoz juss hozzá.</string>
-    <string name="proUpgradeDesktopLinked">Frissíts {pro} szintre a {app_pro} beállításain belül egy olyan csatlakoztatott eszközön, amelyre a(z) {app_name} a(z) {platform_store} vagy a(z) {platform_store_other} áruházon keresztül lett telepítve.</string>
-    <string name="proUpgradeNoAccessBilling">Jelenleg a {pro} hozzáférés csak a(z) {platform_store} vagy a(z) {platform_store_other} áruházon keresztül vásárolható meg. Mivel a(z) {app_name} alkalmazást a(z) {build_variant} segítségével telepítetted, itt nem tudsz {pro} verzióra váltani.\n\nA {app_name} fejlesztői keményen dolgoznak alternatív fizetési lehetőségeken, hogy a felhasználók a(z) {platform_store} és {platform_store_other} áruházakon kívül is megvásárolhassák a {pro} hozzáférést. <b>{pro} ütemterv</b> {icon}</string>
     <string name="proUpgradeOption">Jelenleg csak egy lehetőség van a frissítésre:</string>
     <string name="proUpgradeOptionsTwo">Jelenleg két lehetőség áll rendelkezésre a frissítéshez:</string>
     <string name="proUpgraded">Frissítettél a(z) {app_pro} verzióra!\nKöszönjük, hogy támogatod a(z) {network_name} közösséget.</string>
@@ -1373,7 +1367,7 @@
     <string name="update">Frissítés</string>
     <string name="updateAccess">{pro} hozzáférés frissítése</string>
     <string name="updateAccessTwo">Két módja is van a(z) {pro} hozzáférés frissítésének:</string>
-    <string name="updateApp">App frissítések</string>
+    <string name="updateApp">Alkalmazás-frissítések</string>
     <string name="updateCommunityInformation">Közösségi információk frissítése</string>
     <string name="updateCommunityInformationDescription">A közösség neve és leírása minden közösségi tag számára látható</string>
     <string name="updateCommunityInformationEnterShorterDescription">Adjon meg egy rövidebb közösségleírást</string>
@@ -1385,7 +1379,7 @@
     <string name="updateGroupInformation">Csoportinformációk frissítése</string>
     <string name="updateGroupInformationDescription">A csoport neve és leírása minden csoporttag számára látható.</string>
     <string name="updateGroupInformationEnterShorterDescription">Adjon meg egy rövidebb csoportleírást</string>
-    <string name="updateNewVersion">A(z) {app_name} új verziója elérhető, koppints a frissítéshez</string>
+    <string name="updateNewVersion">Elérhető a(z) {app_name} alkalmazás új verziója, koppintson a frissítéshez</string>
     <string name="updateNewVersionDescription">Elérhető a(z) {app_name} új, {version} verziója.</string>
     <string name="updateProfileInformation">Profilinformációk frissítése</string>
     <string name="updateProfileInformationDescription">A megjelenítendő neve és profilképe minden beszélgetésben látható.</string>

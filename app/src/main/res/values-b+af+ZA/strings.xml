@@ -560,6 +560,7 @@
     <string name="messageVoiceSnippetGroup">{author}: {emoji} Stemboodskap</string>
     <string name="messages">Boodskappe</string>
     <string name="minimize">Minimeer</string>
+    <string name="modalMessageCharacterTooLongTitle">Boodskap te lank</string>
     <string name="next">Volgende</string>
     <string name="nicknameDescription">Kies \'n bynaam vir <b>{name}</b>. Dit sal vir jou verskyn in jou een-tot-een en groepe gesprekke.</string>
     <string name="nicknameEnter">Voer bynaam in</string>

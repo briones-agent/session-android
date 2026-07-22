@@ -463,8 +463,8 @@
         <item quantity="other">Αφαίρεση χρηστών και των μηνυμάτων τους</item>
     </plurals>
     <plurals name="groupRemoveUserOnly">
-        <item quantity="one">Αφαίρεση Απλά Χρήστη</item>
-        <item quantity="other">Αφαίρεση Χρηστών</item>
+        <item quantity="one">Αφαίρεση χρήστη</item>
+        <item quantity="other">Αφαίρεση χρηστών</item>
     </plurals>
     <string name="groupRemoved"><b>{name}</b> αφαιρέθηκε από την ομάδα.</string>
     <string name="groupRemovedMultiple"><b>{name}</b> και <b>{count} άλλα</b> αφαιρέθηκαν από την ομάδα.</string>
@@ -539,14 +539,14 @@
         <item quantity="other">%1$d μέλη</item>
     </plurals>
     <plurals name="membersActive">
-        <item quantity="one">%1$d ενεργά μέλη</item>
+        <item quantity="one">%1$d ενεργό μέλος</item>
         <item quantity="other">%1$d ενεργά μέλη</item>
     </plurals>
     <string name="membersAddAccountIdOrOns">Προσθήκη Account ID ή ONS</string>
     <string name="membersInvite">Πρόσκληση Επαφών</string>
     <plurals name="membersInviteSend">
-        <item quantity="one">Αποστολή Πρόσκλησης</item>
-        <item quantity="other">Αποστολή Προσκλήσεων</item>
+        <item quantity="one">Αποστολή πρόσκλησης</item>
+        <item quantity="other">Αποστολή προσκλήσεων</item>
     </plurals>
     <string name="membersInviteShareDescription">Θα θέλατε να μοιραστείτε το ιστορικό μηνυμάτων ομάδας με τον/την <b>{name}</b>;</string>
     <string name="membersInviteShareDescriptionMultiple">Θα θέλατε να μοιραστείτε το ιστορικό μηνυμάτων ομάδας με τον/την <b>{name}</b> και άλλους <b>{count}</b>;</string>
@@ -564,13 +564,13 @@
     <string name="messageMarkRead">Σήμανση ως αναγνωσμένο</string>
     <string name="messageMarkUnread">Σήμανση ως μη αναγνωσμένο</string>
     <plurals name="messageNew">
-        <item quantity="one">Νέο Μήνυμα</item>
-        <item quantity="other">Νέα Μηνύματα</item>
+        <item quantity="one">Νέο μήνυμα</item>
+        <item quantity="other">Νέα μηνύματα</item>
     </plurals>
     <string name="messageNewDescriptionDesktop">Ξεκινήστε μια νέα συνομιλία εισάγοντας το ID λογαριασμού του φίλου σας ή το ONS.</string>
     <string name="messageNewDescriptionMobile">Ξεκινήστε μια νέα συνομιλία εισάγοντας το ID λογαριασμού του φίλου σας, το ONS ή σκανάροντας τον κώδικα QR τους.</string>
     <plurals name="messageNewYouveGot">
-        <item quantity="one">Έχετε νέο μήνυμα.</item>
+        <item quantity="one">Έχετε ένα νέο μήνυμα.</item>
         <item quantity="other">Έχετε %1$d νέα μηνύματα.</item>
     </plurals>
     <plurals name="messageNewYouveGotGroup">
