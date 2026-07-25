@@ -35,9 +35,33 @@ class LandingActivity: BaseActionBarActivity() {
             )
         }
 
+        addExpoLaunchButton()
+
         IdentityKeyUtil.generateIdentityKeyPair(this)
         TextSecurePreferences.setPasswordDisabled(this, true)
         // AC: This is a temporary workaround to trick the old code that the screen is unlocked.
         KeyCachingService.setMasterSecret(applicationContext, Object())
+    }
+
+    /**
+     * Adds a floating "Expo" button that launches [org.thoughtcrime.securesms.ExpoActivity], which
+     * renders the React Native screen from the Expo brownfield AAR. Added over the Compose content
+     * via addContentView on this landing screen (the first screen users see before an account).
+     */
+    private fun addExpoLaunchButton() {
+        val button = android.widget.Button(this).apply {
+            text = "Expo"
+            isAllCaps = false
+            setOnClickListener {
+                startActivity(android.content.Intent(this@LandingActivity, org.thoughtcrime.securesms.ExpoActivity::class.java))
+            }
+        }
+        val margin = (16 * resources.displayMetrics.density).toInt()
+        val params = android.widget.FrameLayout.LayoutParams(
+            android.widget.FrameLayout.LayoutParams.WRAP_CONTENT,
+            android.widget.FrameLayout.LayoutParams.WRAP_CONTENT,
+            android.view.Gravity.BOTTOM or android.view.Gravity.END
+        ).apply { setMargins(margin, margin, margin, margin) }
+        addContentView(button, params)
     }
 }

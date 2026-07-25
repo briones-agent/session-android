@@ -534,6 +534,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity-alias>
+
+        <!-- Hosts the Expo/React Native screen from the brownfield AAR. -->
+        <activity
+            android:name="org.thoughtcrime.securesms.ExpoActivity"
+            android:exported="false"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode" />
     </application>
 
 </manifest>

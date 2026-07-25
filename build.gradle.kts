@@ -41,6 +41,12 @@ allprojects {
                 includeGroup("org.sessionfoundation")
             }
         }
+        // Local Maven for the Expo brownfield fused AAR, scoped to its group only.
+        mavenLocal {
+            content {
+                includeGroup("session.brownfield")
+            }
+        }
 
         google()
         mavenCentral()

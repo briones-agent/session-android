@@ -341,6 +341,9 @@ android {
 
 
 dependencies {
+    // Expo brownfield: prebuilt fused AAR (RN + Expo, JS bundle embedded) from local Maven.
+    implementation("session.brownfield:brownfield-fused-release:1.0.0")
+
     implementation(project(":content-descriptions"))
 
     ksp(libs.androidx.hilt.compiler)
