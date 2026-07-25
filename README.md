@@ -1,3 +1,44 @@
+# Session Android + React Native
+
+Experimental fork of [Session Android](https://github.com/session-foundation/session-android)
+testing brownfield support for existing Android codebases. Commits serve as reference for
+integrating React Native (via Expo) into an existing native app without refactoring the project
+structure.
+
+Uses Expo's brownfield **isolated** approach: the RN + Expo code is built into a prebuilt **AAR**
+and consumed like any other Maven dependency. A floating "Expo" button launches an `ExpoActivity`
+that renders the React Native screen (JS bundle embedded in the release AAR, so no Metro).
+
+## Integration steps
+
+1. `npx create-expo-app@latest expo-app --template default@canary` (in `./expo-app`,
+   package `session.brownfield`)
+2. Build the AAR:
+   ```sh
+   cd expo-app
+   npx expo install expo-brownfield expo-build-properties
+   npx expo prebuild -p android --clean
+   # android/gradle.properties: brownfield.fused.host-provided=com.github.bumptech.glide
+   npx expo-brownfield build:android --release --fused --verbose
+   ```
+   Publishes `session.brownfield:brownfield-fused-release` to local Maven.
+3. Consume it from `app/build.gradle.kts`, launch from `ExpoActivity`. Build: `:app:assemblePlayDebug`.
+
+### Notes
+
+- **`mavenLocal()`** added to the `allprojects` repositories, scoped to the `session.brownfield` group.
+- **`host-provided=com.github.bumptech.glide`** — Session uses Glide directly and `expo-image` fuses
+  it → duplicate classes without this.
+- The first-run **onboarding** (`LandingActivity`) is always shown before an account exists, so the
+  "Expo" button is added there via `addContentView`.
+- No SDK/Kotlin bump (Kotlin 2.3.20, Gradle 9.4, compileSdk 36, minSdk 26). `libsession-util-android`
+  is a **prebuilt** Maven AAR, so no local native build is required. Built the **play** flavor.
+
+---
+
+<details>
+<summary>Session Android (original README)</summary>
+
 # Session Android 
 
 [Download on the Google Play Store](https://getsession.org/android)
@@ -96,3 +137,6 @@ This project uses [Lucide Icon Font](https://lucide.dev/), which is licensed und
 <a href="mailto:support@getsession.org">
   <img align="left" width="26px" src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" />
 </a>
+
+
+</details>
